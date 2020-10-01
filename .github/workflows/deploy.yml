@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '0 5 * * *'  # run at during the 5th hour of each day
+#   schedule:
+#     - cron: '0 5 * * *'  # run at during the 5th hour of each day
 jobs:
   build-and-deploy:
     runs-on: ubuntu-18.04
