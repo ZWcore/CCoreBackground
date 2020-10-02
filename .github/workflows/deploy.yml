@@ -42,4 +42,4 @@ jobs:
           external_repository: wzhou24/c.core
           publish_branch: master
           publish_dir: ./127.0.0.1:8050
-          cname: pages.github.pie.apple.com
+          cname: github.pie.apple.com
