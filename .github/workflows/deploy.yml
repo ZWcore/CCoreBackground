@@ -39,6 +39,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           url: https://github.pie.apple.com/
-          external_repository:  https://github.pie.apple.com/wzhou24/c.core
+          external_repository: wzhou24/c.core
           publish_branch: master
           publish_dir: ./127.0.0.1:8050
+          cname: pages.github.pie.apple.com
