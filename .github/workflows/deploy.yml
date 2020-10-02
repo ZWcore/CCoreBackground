@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: '0 9 * * *'  # run at during the 5th hour of each day
+    - cron: '0 10 * * *'  # run at during the 5th hour of each day
 jobs:
   build-and-deploy:
     runs-on: ubuntu-18.04
@@ -38,7 +38,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: https://github.pie.apple.com/wzhou24/c.core
+          external_repository: wzhou24/c.core
           publish_branch: master
           publish_dir: ./127.0.0.1:8050
           cname: github.pie.apple.com
